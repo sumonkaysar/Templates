@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+  <div id="formWrapper">
+    <form id="registerForm" class="form" action="">
+      <h1 class="formTitle">Welcome To</h1>
+      <h1 class="formTitle">Hotel Cappuccino</h1>
+      <p class="haveAccount">
+        <small>Already have an account? 
+          <a href="">Log in</a>
+        </small>
+      </p>
+      <div class="inputGroup emailInput">
+        <img src="./assets/email.svg" alt="Email Icon">
+        <input type="email" name="email" placeholder="Enter your email" />
+      </div>
+      <div class="inputGroup passwordInput">
+        <img src="./assets/lock.svg" alt="Lock Icon">
+        <input type="password" name="password" placeholder="Enter a secure password" />
+        <img class="showPass" src="./assets/eye-slash.svg" alt="Eye Slash Icon">
+      </div>
+      <label class="agreement">
+        <input type="checkbox" />
+        <p class="agreementInfo">
+          I agree to platform's Terms of Services & Privacy policy
+        </p>
+      </label>
+      <input class="registerBtn" type="submit" value="Register" />
+
+      <p class="or">or</p>
+
+      <a href="" class="signWith signWithGoogle">
+        <img src="./assets/google.svg" alt="Google Icon">
+        <span>sign in with google</span>
+      </a>
+      <a href="" class="signWith signWithFB">
+        <img src="./assets/facebook.svg" alt="Facebook Icon">
+        <span>sign in with facebook</span>
+      </a>
+    </form>
+  </div>
+  
+</body>
+</html>
