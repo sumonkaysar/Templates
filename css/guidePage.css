@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+  --primary-color: #f7a58e;
+  --primary-font-color: #fff;
+  --primary-bg-color: #fff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header, main, footer{
+  max-width: 650px;
+  margin: auto;
+}
+
+.top-header{
+  height: 250px;
+  background: var(--primary-color);
+  padding: 80px 0;
+  text-align: center;
+  color: var(--primary-bg-color);
+}
+
+.hotelCappuccinoLogo{
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-font-color);
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.hotelCappuccinoLogo img{
+  width: 75%;
+}
+
+.curve-layer{
+  position: relative;
+  z-index: 1;
+  /* transform: rotateY(180deg); */
+}
+
+.curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotateY(180deg);
+}
+
+.curve svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.curve .shape-fill {
+  fill: #F7A58E;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .curve svg {
+      width: calc(166% + 1.3px);
+      height: 91px;
+  }
+}
+
+.palma{
+  width: 100%;
+  position: relative;
+}
+
+.palma img{
+  width: 100%;
+  filter: brightness(.7);
+}
+
+.palma h1{
+  width: 100%;
+  text-align: center;
+  font-size: 37px;
+  font-weight: 400;
+  color: var(--primary-font-color);
+  position: absolute;
+  top: 60%;
+}
+
+.palma-wrapper {
+  padding-bottom: 10px;
+}
+
+.palma-wrapper p {
+  font-size: 18px;
+  color: #212525cc;
+  text-align: center;
+  margin: 25px;
+  line-height: 24px;
+}
+
+.top-activities, .top-restaurents{
+  margin: 20px 25px;
+}
+
+.top-activities h1, .top-restaurents h1{
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 44px;
+  color: #212525;
+  text-align: center;
+  margin: 45px 0;
+}
+
+.top-activities h3, .top-restaurents h3, .tips h3{
+  font-weight: 800;
+  font-size: 21px;
+  color: #212525;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.top-restaurents h3{
+  text-transform: initial;
+}
+
+.top-activities p.top-activities-info, .top-restaurents p.top-restaurents-info, .tips p.tips-info{
+  font-size: 18px;
+  line-height: 24px;
+  color: #212525B2;
+}
+
+.insta-card {
+  margin: 20px 0;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  max-width: 387px;
+}
+
+.insta-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 12px;
+}
+
+.insta-profile-pic {
+  margin-top: 2px;
+  width: 30px;
+  height: 30px;
+}
+
+.insta-profile-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.insta-user-info {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+p.insta-username {
+  font-weight: 900;
+}
+
+p.insta-address {
+  font-weight: 500;
+  color: #848484;
+}
+
+.insta-view-profile-btn {
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  background: #008af5;
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin-left: auto;
+}
+
+.insta-view-profile-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.insta-pic {
+  width: 100%;
+}
+
+.insta-pic img {
+  width: 100%;
+}
+
+p.insta-view-more a {
+  font-weight: 700;
+  font-size: 12px;
+  color: #008af5;
+  text-decoration: none;
+}
+
+p.insta-view-more {
+  padding: 13px 0;
+  margin: 0 16px;
+  border-bottom: 1px solid #efefef;
+}
+
+.insta-icons {
+  display: flex;
+  gap: 8px;
+  margin: 7px 16px;
+}
+
+.insta-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.insta-icons img:last-child {
+  margin-left: auto;
+}
+
+p.like-counts {
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0 17px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #efefef;
+}
+
+.insta-icon {
+  display: flex;
+  justify-content: end;
+}
+
+.insta-icon img {
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+}
+
+.second-activity {
+  margin: 50px 0;
+}
+
+.second-restaurent {
+  margin: 50px 0;
+}
+
+.tips{
+  margin: 20px 20px;
+  padding-top: 50px;
+}
+
+.tips h3{
+  text-align: center;
+  font-weight: 700;
+}
+
+.tips p.tips-info{
+  text-align: center;
+}
+
+.hello-logo{
+  text-align: center;
+  margin: 27px 0;
+}
+
+@media (max-width: 575.99px){
+  header, main, footer{
+    max-width: 450px;
+  }
+}
