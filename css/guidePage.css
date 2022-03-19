@@ -51,7 +51,6 @@ header, main, footer{
 .curve-layer{
   position: relative;
   z-index: 1;
-  /* transform: rotateY(180deg); */
 }
 
 .curve {

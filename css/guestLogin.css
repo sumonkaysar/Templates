@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root{
+  --primary-color: #f7a58e;
+  --primary-font-color: #fff;
+  --primary-bg-color: #fff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address{
+  background: var(--primary-color);
+  padding: 25px 0;
+  text-align: center;
+  color: var(--primary-bg-color);
+}
+
+.hotelCappuccinoLogo{
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-font-color);
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.hotelCappuccinoLogo img{
+  width: 75%;
+}
+
+.address h2{
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.location{
+  gap: 5px;
+  font-size: 13px;
+  margin-top: 16px;
+}
+
+.location img{
+  width: 14px;
+  height: 16px;
+}
+
+.curve-layer{
+  position: relative;
+  z-index: 1;
+}
+
+.curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotateY(180deg);
+}
+
+.curve svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.curve .shape-fill {
+  fill: #F7A58E;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .curve svg {
+      width: calc(166% + 1.3px);
+      height: 91px;
+  }
+}
+
+#guestLoginForm{
+  margin-top: 90px;
+}
+
+#formWrapper{
+  width: 430px;
+  font-family: 'Lato', sans-serif;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+h1.formTitle {
+  font-size: 37px;
+  font-weight: 600;
+  color: #f7a58e;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.3;
+}
+
+.haveAccount{
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.haveAccount a {
+  color: #f7a58e;
+}
+
+.inputGroup {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inputGroup img {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  margin-top: -2px;
+}
+
+img.showPass{
+  left: initial;
+  right: 20px;
+}
+
+.inputGroup input {
+  width: 100%;
+  border: 1px solid #010101;
+  background: transparent;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 70px;
+  padding-left: 55px;
+}
+
+.inputGroup input::placeholder{
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.passwordInput input{
+  font-size: 35px;
+}
+
+.passwordInput input::placeholder{
+  position: relative;
+  top: -6px;
+}
+
+.agreement {
+  display: flex;
+  margin: 25px 0;
+  gap: 10px;
+}
+
+.agreement input[type="checkbox"]{
+  width: 29px !important;
+  height: 31px !important;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance:none;
+  cursor: pointer;
+}
+
+.agreement input[type="checkbox"]:checked {
+  position: relative;
+  background-color: #F7A58E;
+  border-color: transparent;
+}
+
+.agreement input[type="checkbox"]:checked:after {
+  content: '\2713';
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1rem;
+  font-size:1rem;
+}
+
+p.agreementInfo {
+  font-size: 14px;
+  margin-top: 7px;
+  font-weight: 600;
+}
+
+input.registerBtn {
+  display: block;
+  width: 100%;
+  padding: 17px;
+  background: #f7a58e;
+  color: #fff;
+  font-weight: 700;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+p.or {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: #f7a58e;
+  margin: 15px 0;
+}
+
+a.signWith {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 25px;
+  padding: 16px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+a.signWithFB {
+  background: linear-gradient(264.57deg, #2660DA -4.06%, #3C68A0 96.41%);
+  color: #fff;
+}
+
+.hello-logo{
+  text-align: center;
+  margin: 27px 0;
+}

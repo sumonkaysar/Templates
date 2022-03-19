@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/guestLogin.css">
+</head>
+<body>
+  <header>
+    <div class="address">
+      <div>
+        <div class="hotelCappuccinoLogo center">
+          <img src="./assets/hotel-cappuccino.svg" alt="Hotel Cappucino Icon">
+        </div>
+      </div>
+      <div>
+        <h2>Hotel Cappucino</h2>
+        <p>@hotelcappucino</p>
+        <div class="location center">
+          <img src="./assets/location.svg" alt="Location Icon">
+          <p>Plaça de Cort, 07001 Palma de Mallorca</p>
+        </div>
+      </div>
+    </div>
+    <div class="curve-layer">
+      <div class="curve">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="guestLoginForm">
+      <div id="formWrapper">
+        <form id="registerForm" class="form" action="">
+          <h1 class="formTitle">Welcome To</h1>
+          <h1 class="formTitle">Hotel Cappuccino</h1>
+          <p class="haveAccount">
+            <small>Already have an account? 
+              <a href="">Log in</a>
+            </small>
+          </p>
+          <div class="inputGroup emailInput">
+            <img src="./assets/email.svg" alt="Email Icon">
+            <input type="email" name="email" placeholder="Enter your email" />
+          </div>
+          <div class="inputGroup passwordInput">
+            <img src="./assets/lock.svg" alt="Lock Icon">
+            <input type="password" name="password" placeholder="Enter a secure password" />
+            <img class="showPass" src="./assets/eye-slash.svg" alt="Eye Slash Icon">
+          </div>
+          <label class="agreement">
+            <input type="checkbox" />
+            <p class="agreementInfo">
+              I agree to platform's Terms of Services & Privacy policy
+            </p>
+          </label>
+          <input class="registerBtn" type="submit" value="Register" />
+    
+          <p class="or">or</p>
+    
+          <a href="" class="signWith signWithGoogle">
+            <img src="./assets/google.svg" alt="Google Icon">
+            <span>sign in with google</span>
+          </a>
+          <a href="" class="signWith signWithFB">
+            <img src="./assets/facebook.svg" alt="Facebook Icon">
+            <span>sign in with facebook</span>
+          </a>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="hello-logo">
+      <img src="./assets/hello.svg" alt="Logo">
+    </div>
+  </footer>
+</body>
+</html>
