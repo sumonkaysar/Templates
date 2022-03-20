@@ -80,7 +80,8 @@ body{
 
 .slider-btns{
   gap: 10px;
-  margin: 30px 0;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .slider-btns button{
@@ -89,6 +90,7 @@ body{
   margin-top: 4px;
   margin-left: 27px;
   margin-right: 27px;
+  background: none;
 }
 
 .slider-btn{
@@ -183,6 +185,13 @@ a.social-medias{
   border: 1px solid var(--primary-color);
   box-shadow: 0px 4px 16px rgba(247, 165, 142, 0.18);
   border-radius: 8px;
+  text-transform: capitalize;
+  transition: background .5s, color .4s;
+}
+
+.booking a:hover {
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
 }
 
 .hotel-gallery{

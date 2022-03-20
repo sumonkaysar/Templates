@@ -166,7 +166,48 @@ img.showPass{
   top: -6px;
 }
 
-input.loginBtn {
+.agreement {
+  display: flex;
+  margin: 25px 0;
+  gap: 10px;
+}
+
+.agreement input[type="checkbox"]{
+  width: 29px !important;
+  height: 31px !important;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance:none;
+  cursor: pointer;
+}
+
+.agreement input[type="checkbox"]:checked {
+  position: relative;
+  background-color: #F7A58E;
+  border-color: transparent;
+}
+
+.agreement input[type="checkbox"]:checked:after {
+  content: '\2713';
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1rem;
+  font-size:1rem;
+}
+
+p.agreementInfo {
+  font-size: 14px;
+  margin-top: 7px;
+  font-weight: 600;
+}
+
+input.registerBtn {
   display: block;
   width: 100%;
   padding: 17px;
@@ -186,7 +227,7 @@ p.or {
   margin: 15px 0;
 }
 
-a.logWith {
+a.signWith {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,7 +246,7 @@ a.logWith {
   box-shadow: 0px 4px 16px 0px #6d8dad2e;
 }
 
-a.logWithFB {
+a.signWithFB {
   background: linear-gradient(264.57deg, #2660DA -4.06%, #3C68A0 96.41%);
   color: #fff;
 }
